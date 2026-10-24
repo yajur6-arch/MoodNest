@@ -5,11 +5,11 @@
     "preview": {
       "distribution": "internal",
       "android": { "buildType": "apk" },
-      "env": { "EXPO_PUBLIC_API_URL": "https://YOUR-SERVICE-NAME.onrender.com" }
+      "env": { "EXPO_PUBLIC_API_URL": "https://moodnest-1.onrender.com" }
     },
     "production": {
       "android": { "buildType": "app-bundle" },
-      "env": { "EXPO_PUBLIC_API_URL": "https://YOUR-SERVICE-NAME.onrender.com" }
+      "env": { "EXPO_PUBLIC_API_URL": "https://moodnest-1.onrender.com" }
     }
   }
 }

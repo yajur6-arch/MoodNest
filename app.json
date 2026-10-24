@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "MoodNest",
+    "slug": "moodtracker",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-notifications",
+      "react-native-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      "expo-asset"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.eduvos.moodnest"
+    },
+    "android": {
+      "package": "com.eduvos.moodnest",
+      "permissions": [
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_HEART_RATE"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ab9b1904-3a8b-48ba-848e-9ae20b2e615c"
+      }
+    }
+  }
+}

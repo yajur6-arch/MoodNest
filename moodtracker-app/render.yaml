@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: moodtracker-assistant
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ASSISTANT_MODEL
+        sync: false
+      - key: ASSISTANT_FALLBACK_MODEL
+        sync: false
+      - key: CAMPUS_CONTACT
+        sync: false
